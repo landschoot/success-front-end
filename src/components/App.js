@@ -1,4 +1,5 @@
 import React from "react";
+import DropDownSearch from "./DropdownSearch";
 class App extends React.Component {
   state = { labelText: "Enter Engagement Name" };
   render() {
@@ -7,11 +8,7 @@ class App extends React.Component {
         <h1 className="header1" htmlFor="engagementName">
           {this.state.labelText}
         </h1>
-        <input
-          id="name"
-          type="text"
-          text="This will be a combo box eventually"
-        />
+        <DropDownSearch />
       </div>
     );
   }

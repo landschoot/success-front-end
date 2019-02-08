@@ -7,6 +7,8 @@ class DropdownSearch extends React.Component {
     placeholder: this.props.placeholder,
     options: this.props.options
   };
+  /*props are a default private data member for every
+  react.component class */
   render() {
     return (
       <div>

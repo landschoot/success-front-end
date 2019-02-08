@@ -27,4 +27,8 @@ const EngagementEntries = {
   ]
 };
 
+/*This is the testing data that was found in the wireframes
+I simply made it into a .JSON and am using it inside this first 
+engagement entry page */
+
 export default EngagementEntries;

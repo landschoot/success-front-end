@@ -18,6 +18,7 @@ class DropdownSearch extends React.Component {
           pointing
           options={this.state.options}
           onChange={e => this.setState({ term: e.target.value })}
+          // onchange to be implemented later
         />
       </div>
     );

@@ -1,5 +1,6 @@
 import React from "react";
 import EngagementEntry from "./EngagementEntry";
+import ProjectEntry from "./ProjectEntry";
 
 // import ClientNames from "./../api/testing";
 class App extends React.Component {
@@ -13,6 +14,7 @@ class App extends React.Component {
     return (
       <div className="ui container" style={{ marginTop: "10px" }}>
         <EngagementEntry />
+        <ProjectEntry />
       </div>
     );
   }

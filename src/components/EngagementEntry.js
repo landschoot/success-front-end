@@ -5,22 +5,22 @@ import DropdownSearch from "./DropdownSearch";
 import "./EngagementEntry.css";
 
 /* importing test data */
-import EngagementEntries from "../api/testing";
+import DropdownOptions from "../api/testing";
 
 class EngagementEntry extends React.Component {
   /*The State of this compoenent holds any pertinent information in the component.
     Usually, parent compoent's states get passed down to child components through
     the props system */
   state = {
-    ClientNames: EngagementEntries.Clients,
-    EngagementNames: EngagementEntries.Engagments,
+    ClientNames: DropdownOptions.EngagementEntries.Clients,
+    EngagementNames: DropdownOptions.EngagementEntries.Engagments,
     titleText: "Select Engagement Details"
   };
 
   render() {
     return (
       <div>
-        <h1 className="header1" htmlFor="engagementName">
+        <h1 className="header1" htmlFor="engagementPageHead">
           {this.state.titleText}
         </h1>
         <div className="ui segment">

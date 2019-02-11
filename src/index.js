@@ -1,12 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+// Import the React and ReactDOM libraries
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./components/App";
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+/*
+TODO (alphabetic IDs, but sequential order not required):
+a. Create continue button at the bottom right corner
+    of the screen. Upon pushing this button change
+    to a different screen while also doing task {b}
+b. Pull engagement selection from the dropdwon menus
+    and store them, so as to have search terms for the
+    success story database
+c.  Build second screen of Engagement Details
+    pg 19 in the document
+*/
+ReactDOM.render(<App />, document.querySelector("#root"));

@@ -1,13 +1,8 @@
 import React from "react";
-import ContainerRow from "./ContainerRow";
+import EngagementEntry from "./EngagementEntry";
 
 // import ClientNames from "./../api/testing";
 class App extends React.Component {
-  /*The State of this compoenent holds any pertinent information in the component.
-    Usually, parent compoent's states get passed down to child components through
-    the props system */
-  state = { titleText: "Select Engagement Details" };
-
   /*This render Content method will call every time the Render method is called.
     Since render is usually called a lot, we don't want to put a lot of, or any,
     logic inside the render() method itself. So decision trees of which
@@ -17,10 +12,7 @@ class App extends React.Component {
   renderContent() {
     return (
       <div className="ui container" style={{ marginTop: "10px" }}>
-        <h1 className="header1" htmlFor="engagementName">
-          {this.state.titleText}
-        </h1>
-        <ContainerRow />
+        <EngagementEntry />
       </div>
     );
   }
